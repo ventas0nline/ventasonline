@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Menú Navegación Bootstrap</title>
+</head>
+<body>
+   <style>
+        img{
+            border-radius: 50px;
+        }
+        .navbar-brand{/*linea 22 del logo q lo separa de la imagen*/
+            margin-left: 20px;
+        }
+        
+   </style>
+    
+
+      <h1>ERES EL MEJOR JAMES</h1>
+      <p>ul class="navbar-nav ms-auto" <b>ubica los botones a la derecha en pantallas de 1024px en adelante</p>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container justify-content-center">
+          <img src="img/music.jpeg" alt="logo" width="50px">
+          <a class="navbar-brand" href="#">Salsa</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+            <ul class="navbar-nav text-center"><!--ms-auto ubica los botones a la derecha-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Canciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Inicio Sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <p><b>Ubica el Logo y el Menú en el Centro</p>
+      <h2>div class="container justify-content-center"</h2>
+      <h2>div class="collapse navbar-collapse flex-grow-0"</h2>
+      <h2>ul class="navbar-nav text-center</h2>
+</body>
+</html>
