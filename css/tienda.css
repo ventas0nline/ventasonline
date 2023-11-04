@@ -50,10 +50,22 @@ h4{
 p {
     font-size: 1.5rem;
 }
+button{
+    background-color: rgb(35, 244, 35);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+    border: none;
+}
+button :hover{
+    color: black;
+}
 footer{
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 10px;
 }
 .entrada-blog a {
     display: inline-block;
