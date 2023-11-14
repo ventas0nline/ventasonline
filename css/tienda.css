@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
 }
 
 *,
@@ -11,8 +11,8 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.6rem;
-    line-height: 2;
+    /* font-size: 1.0rem; */
+    line-height: 1.5;
 }
 
 img {
@@ -23,26 +23,43 @@ img {
     width: 450px;
     height: 630px;
 }
-h1 {
-    font-size: 4rem;
-    padding: 15px;
+.titulo {
+    font-size: 1.5rem;
     text-align: center;
 }
 h1::first-letter{
     font-size: 50px;
 }
-h2 {
-    font-size: 2rem;
+article h2 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+aside h2 {
+    font-size: 15px;
     text-align: center;
     font-weight: bold;
 }
 a h3{
     margin-top: 7px;
     font-weight: bold;
+    font-size: 25px;
 }
-h4{
+article h4{
     padding-top: 10px;
     font-weight: bold;
+    font-size: 14px;
+}
+aside h4{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+article p{
+    font-size: 13px;
+}
+aside p{
+    font-size: 13px;
 }
 .contenedor {
     max-width: 1200px;
@@ -51,7 +68,7 @@ h4{
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
 }
 button{
     background-color: blue;
