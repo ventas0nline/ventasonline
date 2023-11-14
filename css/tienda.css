@@ -17,13 +17,16 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
-.hisense{
-    width: 500px;
+.redmi{
+    width: 450px;
+    height: 630px;
 }
 h1 {
     font-size: 4rem;
     padding: 15px;
+    text-align: center;
 }
 h1::first-letter{
     font-size: 50px;
@@ -63,23 +66,15 @@ button:hover{
     border-radius: 10px;
     color: white;
 }
-.nav-link:hover{
+.nav-link:hover{ 
     font-weight: bold;
 }
+
 footer{
     background-color: black;
     color: white;
     text-align: center;
     font-size: 10px;
-}
-.entrada-blog a {
-    display: inline-block;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 
@@ -89,7 +84,7 @@ footer{
     .contenedor-grid {
         display: grid;
         grid-template-areas: "izquierda contenido derecha";
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns:repeat(3, 1fr);
         grid-auto-flow: column;
         column-gap: 2rem;
     }
@@ -100,5 +95,110 @@ footer{
 
     .sidebar-1 {
         grid-area: derecha;
+    }
+    h1 {
+        font-size: 2rem;
+        padding: 15px;
+        text-align: center;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .redmi{
+        width: 450px;
+        height: 480px;
+    }
+}
+
+ @media (min-width: 425px) {
+    
+    img {
+        width:60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    .sidebar-1 {
+        grid-area: derecha;
+    }
+    h1 {
+        font-size: 2.5rem;
+        padding: 15px;
+        text-align: center;
+    }
+    h4{
+        font-size: 13px;
+    }
+    button{
+        margin-left: 5px;
+        font-size: 13px;
+    }
+    .redmi{
+        width: 300px;
+        height: 540px;
+        padding: 0 10px 0 10px;
+    }
+}
+@media (min-width: 375px) {
+    
+    img {
+        width:70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    .sidebar-1 {
+        grid-area: derecha;
+    }
+    h1 {
+        font-size: 1.7rem;
+        padding: 15px;
+        text-align: center;
+    }
+    button{
+        margin-left: 5px;
+        font-size: 13px;
+    }
+    .redmi{
+        width: 400px;
+        height: 540px;
+        padding: 0 10px 0 10px;
+    }
+}
+@media (min-width: 320px) {
+    
+    img {
+        width:70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    .sidebar-1 {
+        grid-area: derecha;
+    }
+    h1 {
+        font-size: 1.3rem;
+        padding: 15px;
+        text-align: center;
+    }
+    h2{
+        font-size: 13px;
+    }
+    h4{
+        padding: 5px;
+    }
+    p{
+        padding: 5px;
+    }
+    .redmi{
+        width: 400px;
+        height: 490px;
+    }
+    button{
+        margin-left: 5px;
+        font-size: 12px;
     }
 }
